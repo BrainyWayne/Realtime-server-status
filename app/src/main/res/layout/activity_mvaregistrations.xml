@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitecard"
+    tools:context=".MVASnapshot.MVARegistrations">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/topRel"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:transitionName="logo"
+            android:src="@drawable/logoonly" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/vodafonecolor"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@id/logo"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textSize="19sp"
+            android:layout_marginStart="10dp"
+            android:text="Registrations"/>
+
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:tint="@color/vodafonecolor"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="50dp"
+            android:src="@drawable/moreicon" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/topRel"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/year2016_layout"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/whitebutton"
+                android:layout_height="100dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <TextView
+                    android:id="@+id/year2016"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="2016"
+                    android:textColor="@color/vodafonecolor"/>
+
+                <TextView
+                    android:id="@+id/year2016total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="574698"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/year2017_layout"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/whitebutton"
+                android:layout_height="100dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <TextView
+                    android:id="@+id/year2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="2017"
+                    android:textColor="@color/vodafonecolor"/>
+
+                <TextView
+                    android:id="@+id/year2017total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="654984"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/year2018_layout"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/whitebutton"
+                android:layout_height="100dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <TextView
+                    android:id="@+id/year2018"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="2018"
+                    android:textColor="@color/vodafonecolor"/>
+
+                <TextView
+                    android:id="@+id/year2018total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="974698"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/year2019_layout"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/whitebutton"
+                android:layout_height="100dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <TextView
+                    android:id="@+id/year2019"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="2019"
+                    android:textColor="@color/vodafonecolor"/>
+
+                <TextView
+                    android:id="@+id/year2019total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="7856748"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

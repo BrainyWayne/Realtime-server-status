@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/whitecard"
+    android:layout_height="match_parent"
+    tools:context=".ServerStatus.HomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:transitionName="logo"
+            android:src="@drawable/logoonly" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/vodafonecolor"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@id/logo"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textSize="19sp"
+            android:layout_marginStart="10dp"
+            android:text="MVA Snapshot"/>
+
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:tint="@color/vodafonecolor"
+            android:padding="10dp"
+            android:layout_toStartOf="@id/more"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_height="50dp"
+            android:src="@drawable/searchicon" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:tint="@color/vodafonecolor"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="50dp"
+            android:src="@drawable/moreicon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/topLinear"
+        android:layout_marginStart="5dp"
+        android:transitionName="topLinear"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_background"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/profileicon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:layout_marginStart="15dp"
+                    android:text="Logged in user"/>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginStart="15dp"
+                    android:text="Francis Eshun"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/topLinear"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/registrations_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/mva_registrations"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/new_registrations_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/mva_new_registrations"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/services_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/mva_services"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/new_services_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/mva_new_services"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/unique_visitors_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/mva_unique_visitors"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/total_visitors_visitors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/mva_total_visitors"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/revenue_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/mva_revenue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/transactionss_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/mva_transactions"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/registrations_layout"
+    android:layout_width="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/whitebutton"
+    android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="2016"
+        android:textColor="@color/vodafonecolor"/>
+
+    <TextView
+        android:id="@+id/year_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="574698"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
